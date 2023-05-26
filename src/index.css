@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  @apply bg-blue-500
+}
+.swiper {
+    width: 600px;
+    height: 180px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 480px){
+    .swiper{
+        width: 95%;
+    }
+    .swiper-slide img {
+        width: 180px;
+        height: 120px;
+      }
+  }
